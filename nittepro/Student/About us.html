@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<!--<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-97824898-1', 'auto');
+ga('send', 'pageview');
+</script>-->
+</head>
+<body>
+
+<header>
+<img src="http://vectorlogofree.com/wp-content/uploads/2013/01/canadian-olympic-team-logo-vector-400x400.png" width="100px" height="80px">
+<h1 class="liketext">NITTEPro</h1>
+
+</header>
+
+<div class="row">
+
+<nav>
+		<div class="menu-icon">
+			
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Events.php">Events</a></li>
+			<li><a href="Results_stud.php">Results</a></li>
+			<li><a href="#" style="color:red;">About us</a></li>
+		
+			
+		</ul>
+	</nav>
+<center>
+<div class="col-5">
+  <h1>About us</h1>NITTE Meenakshi Institute of Technology is an autonomous engineering college in Bangalore, Karnataka, India. The college is and approved by the AICTE, New Delhi. NMIT offers a four-year graduate programme in engineering leading to the award of the degree Bachelor of Engineering (B.E.).
+
+<!--If you have any query about this application please click on below bubtton to get contact information.<br><br>-->
+<br><br><b><i>Thank you </b></i>
+<br><br><br>For more Details, you can contact,
+<p>
+  <table style="width:100%" border: 1px solid black>
+  <tr>
+    <th>Name</th>
+    <th>E-mail</th> 
+    <th>Phone No.</th>
+  </tr>
+  <tr>
+    <td>Mohamed Jaffar</td>
+    <td>mohamedjaffar450@gmail.com</td>
+    <td>+91-9686760285</td>
+  </tr>
+  <tr>
+    <td>Prajna Shetty</td>
+    <td>prajna.shetty39@gmail.com</td>
+    <td>+91-7975427236</td>
+  </tr>
+  <tr>
+    <td>Ritu Saxena</td>
+    <td>shivani.saxena172@gmail.com</td>
+    <td>+91-8696731972</td>
+  </tr>
+</table>
+</p>
+<br><br><br>
+<!--<br><br>
+<button type="button" onclick="loadDoc()">Get Contact Details</button>
+<br><br>-->
+<table id="demo"></table>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLhttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "dev.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Name</th><th>E-mail</th><th>Contact</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerhtML = table;
+}
+</script>
+
+</div>
+
+</center>
+
+    <h3>Google Map Location</h3>
+    <div id="map" class="col-5"></div>
+    <script>
+      function initMap() {
+      
+        var uluru = {lat:13.1285, lng:77.5873};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL0YnmIfZqElm1KLIusbLLooqXT0-e0Ts&callback=initMap">
+    </script>
+</div>
+<br>
+<center>
+<img src="https://t4.ftcdn.net/jpg/01/08/89/47/240_F_108894716_XTAQTSuU1B1kmM7w9CqL0wEJI7TjAOXY.jpg" width="50%;">
+</center>
+</body>
+</html>
